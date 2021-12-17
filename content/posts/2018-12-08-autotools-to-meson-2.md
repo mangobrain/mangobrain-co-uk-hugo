@@ -4,7 +4,7 @@ date: 2018-12-08
 comments: true
 categories: [software development]
 ---
-Reading back over [this post](/software development/2018/11/16/autotools-to-meson.html), I realise
+Reading back over [this post](/posts/2018-11-16-autotools-to-meson/), I realise
 I covered a fair bit of the why, but not much of the how. So I thought I'd
 revisit the topic and expand.
 

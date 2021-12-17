@@ -211,4 +211,4 @@ the Infector repository as a working example if you wish, and just Do It.
 
 Please?
 
-Update: [part 2 here](/software development/2018/12/08/autotools-to-meson-2.html)
+Update: [part 2 here](/posts/2018-12-08-autotools-to-meson-2/)
