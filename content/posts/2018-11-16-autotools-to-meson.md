@@ -1,7 +1,7 @@
 ---
 title: "Migrating from Autotools to Meson: why, and how, to do it"
 date: 2018-11-16
-comments: true
+comments: false
 categories: [software development]
 ---
 In recent years, it seems everyone wants to learn to code. This is great, but

@@ -1,7 +1,7 @@
 ---
 title: "Migrating from Autotools to Meson, part 2: more of the how"
 date: 2018-12-08
-comments: true
+comments: false
 categories: [software development]
 ---
 Reading back over [this post](/posts/2018-11-16-autotools-to-meson/), I realise
