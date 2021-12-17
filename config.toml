@@ -1,0 +1,4 @@
+baseURL = "https://www.mangobrain.co.uk/"
+languageCode = "en-GB"
+title = "Mangobrain"
+disableKinds = ["taxonomy", "taxonomyTerm", "category", "sitemap", "RSS", "section"]

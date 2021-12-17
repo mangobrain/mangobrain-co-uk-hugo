@@ -1,0 +1,29 @@
+{{ $style := resources.Get "css/main.scss" | resources.ToCSS (dict "outputStyle" "compressed") | resources.Fingerprint }}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="/icon.png">
+        <link rel="stylesheet" type="text/css" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" media="screen">
+        <link rel="stylesheet" type="text/css" href="/css/syntax.css" media="screen">
+        <title>{{ .Site.Title }}{{ if .Title }} - {{ .Title }}{{ end }}</title>
+    </head>
+    <body>
+        <header class="top">
+            <a href="/"><img src="/logo.png" alt="Site logo"></a>
+        </header>
+            <main class="page-content" aria-label="Content">
+                {{ block "main" . }}
+                {{ end }}
+            </main>
+        <footer>
+            <div class="logo-links">
+                <a href="https://github.com/mangobrain">
+                    <img src="/github.png" alt="GitHub logo">
+                </a>
+            </div>
+            <div class="copyright">&copy; 2018 - 2021 Philip Allison</div>
+        </footer>
+    </body>
+</html>

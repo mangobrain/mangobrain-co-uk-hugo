@@ -1,0 +1,27 @@
+{{ define "main" }}
+    <div class="frontpage-about">
+        <h1 class="page-heading">Welcome</h1>
+        <div class="fa-wrap">
+            <div><a href="https://github.com/mangobrain"><img src="/github.png" width="32" height="32" alt="GitHub logo">Code I've written</a></div>
+            <div><a href="https://www.instagram.com/mangobrain"><img src="/instagram.png" width="32" height="32" alt="Instagram logo">Food I've eaten (some of which I made)</a></div>
+            <div><a href="https://soundcloud.com/philip-allison-541151096"><img src="/soundcloud.png" width="42" height="22" alt="SoundCloud logo">Noises I've made</a></div>
+        </div>
+    </div>
+    <div class="home">
+        <h1 class="page-heading">Blog</h1>
+        <ul class="post-list">
+            {{ $pag := .Paginate (where site.RegularPages "Type" "in" "posts") }}
+            {{ range $pag.Pages }}
+                <li>
+                    <div class="post-list-item">
+                        <div class="post-title">
+                            <a href="{{ .Permalink }}">{{ .Title }}</a>
+                        </div>
+                        <time class="post-date">{{ .Date.Format "2006-01-01" }}</time>
+                    </div>
+                </li>
+            {{ end }}
+            <!-- TODO: Figure out how to handle additional pages -->
+        </ul>
+    </div>
+{{ end }}
