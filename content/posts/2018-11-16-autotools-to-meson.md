@@ -153,7 +153,7 @@ AC_OUTPUT
 ```
 
 We have this:
-```
+```shell
 project('infector', 'cpp', license: 'GPL3+', version: '0.7')
 i18n = import('i18n')
 subdir('src')
