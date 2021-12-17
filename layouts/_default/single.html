@@ -21,7 +21,7 @@
         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
         var disqus_config = function () {
             this.page.url = '{{ .Permalink }}';
-            this.page.identifier = '{{ .Content | sha256 }}';
+            this.page.identifier = '{{ .Permalink | sha256 }}';
         };
         (function(){ // DON'T EDIT BELOW THIS LINE
             var d = document, s = d.createElement('script');
