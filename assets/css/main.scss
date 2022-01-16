@@ -122,6 +122,11 @@ div.post-list-item
     justify-content: space-between;
 }
 
+div.highlight pre
+{
+    overflow: auto;
+}
+
 div.post-title
 {
     display: inline-block;
